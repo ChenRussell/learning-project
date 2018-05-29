@@ -22,12 +22,12 @@ public class MessageDao {
 		List<Message> messageList = new ArrayList<Message>();
 		SqlSession sqlSession = null;
 		try {
+			sqlSession = dbAccess.getSqlSession();
 			Message message = new Message();
 			message.setCommand(command);
 			message.setDescription(description);
-			sqlSession = dbAccess.getSqlSession();
 			// 通过sqlSession执行SQL语句
-			messageList = sqlSession.selectList("Message.queryMessageList", message);
+			messageList = sqlSession.selectList("Message.queryMessageList",message);
 		} catch (Exception e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();

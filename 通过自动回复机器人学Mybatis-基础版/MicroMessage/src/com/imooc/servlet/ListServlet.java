@@ -22,12 +22,12 @@ public class ListServlet extends HttpServlet {
 		// 接受页面的值
 		String command = req.getParameter("command");
 		String description = req.getParameter("description");
-		// 向页面传值
-		req.setAttribute("command", command);
-		req.setAttribute("description", description);
 		QueryService listService = new QueryService();
 		// 查询消息列表并传给页面
 		req.setAttribute("messageList", listService.queryMessageList(command, description));
+		// 向页面传值
+		req.setAttribute("command", command);
+		req.setAttribute("description", description);
 		// 向页面跳转
 		req.getRequestDispatcher("/WEB-INF/jsp/back/list.jsp").forward(req, resp);
 	}

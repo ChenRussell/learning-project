@@ -31,7 +31,7 @@
   </resultMap>
 
   <select id="queryMessageList" parameterType="com.imooc.bean.Message" resultMap="MessageResult">
-    select ID,COMMAND,DESCRIPTION,CONTENT from MESSAGE
+    select <include refid="columns"/> from MESSAGE
     <where>
     	<if test="command != null and !&quot;&quot;.equals(command.trim())">
 	    	and COMMAND=#{command}
@@ -41,6 +41,8 @@
 	    </if>
     </where>
   </select>
+  
+  <sql id="columns">ID,COMMAND,DESCRIPTION,CONTENT</sql>
   
   <delete id="deleteOne" parameterType="int">
   	delete from MESSAGE where ID = #{_parameter}
