@@ -1,0 +1,13 @@
+/home/chenrui/code/imooc_springboot_girl/src/main/java/com/imooc/aspect/HttpAspect.java
+/home/chenrui/code/imooc_springboot_girl/src/main/java/com/imooc/handle/ExceptionHandle.java
+/home/chenrui/code/imooc_springboot_girl/src/main/java/com/imooc/controller/GirlController.java
+/home/chenrui/code/imooc_springboot_girl/src/main/java/com/imooc/domain/Girl.java
+/home/chenrui/code/imooc_springboot_girl/src/main/java/com/imooc/enums/ResultEnum.java
+/home/chenrui/code/imooc_springboot_girl/src/main/java/com/imooc/service/GirlService.java
+/home/chenrui/code/imooc_springboot_girl/src/main/java/com/imooc/properties/GirlProperties.java
+/home/chenrui/code/imooc_springboot_girl/src/main/java/com/imooc/GirlApplication.java
+/home/chenrui/code/imooc_springboot_girl/src/main/java/com/imooc/domain/Result.java
+/home/chenrui/code/imooc_springboot_girl/src/main/java/com/imooc/controller/HelloController.java
+/home/chenrui/code/imooc_springboot_girl/src/main/java/com/imooc/repository/GirlRepository.java
+/home/chenrui/code/imooc_springboot_girl/src/main/java/com/imooc/utils/ResultUtil.java
+/home/chenrui/code/imooc_springboot_girl/src/main/java/com/imooc/exception/GirlException.java
